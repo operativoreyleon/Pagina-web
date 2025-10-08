@@ -1,0 +1,107 @@
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        padding-top: 80px;
+        /* Ajuste para el header fijo */
+    }
+
+    .section-fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+
+    .section-fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    /* Estilos para el slider */
+    .slider-item .slide-content {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.5s ease-out 0.3s, transform 0.5s ease-out 0.3s;
+    }
+
+    .slider-item.active .slide-content {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    /* --- Estilos Modernos para la Navegación --- */
+    .nav-link {
+        position: relative;
+        padding-bottom: 6px;
+        transition: color 0.3s ease-in-out;
+        color: #2d3748;
+        /* rey-dark */
+    }
+
+    .nav-link:hover {
+        color: #d69e2e;
+        /* rey-gold */
+    }
+
+    .nav-link::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #d69e2e;
+        /* rey-gold */
+        transition: width 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::after,
+    .nav-link.active-link::after {
+        width: 100%;
+    }
+
+    .nav-link.active-link {
+        color: #d69e2e;
+        /* rey-gold */
+    }
+
+    /* --- Estilos para el Carrusel de Clientes --- */
+
+/* Contenedor principal que oculta el desbordamiento */
+.client-carousel-container {
+    overflow: hidden;
+    /* Efecto de desvanecido en los bordes para una apariencia más suave */
+    -webkit-mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
+}
+
+/* Pista que contiene los logos y se anima */
+.client-carousel-track {
+    /* El doble de logos necesitará el doble de ancho */
+    width: calc(250px * 16); /* 250px aprox por logo * 16 logos (8 originales + 8 clones) */
+    animation: scroll 40s linear infinite;
+}
+
+/* Animación de desplazamiento continuo */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        /* Se desplaza la mitad de la pista, que corresponde a los logos originales */
+        transform: translateX(calc(-250px * 8));
+    }
+}
+
+/* Estilo para cada logo individual */
+.client-logo img {
+    height: 60px; /* Altura uniforme para todos los logos */
+    transition: all 0.3s ease;
+}
+
+/* Efecto al pasar el cursor sobre un logo */
+.client-logo img:hover {
+    transform: scale(1.1); /* Lo agranda ligeramente */
+}

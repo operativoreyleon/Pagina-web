@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transportes Rey León S.A.S. - Servicio de Transporte Especial</title>
+    <!-- Vínculo a Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Vínculo a la hoja de estilos externa -->
+    <link rel="stylesheet" href="Estilos.css">
+    <!-- Vínculo a Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-rey-light text-rey-dark font-sans">
+
+    <!-- Header y Navegación Mejorado -->
+    <header id="main-header" class="fixed top-0 left-0 right-0 z-40 bg-white shadow-md">
+        <nav class="container mx-auto px-6 h-16,5 flex justify-between items-center">
+            <a href="#inicio">
+                <img src="IMG\logo final rey leon final.png" alt="Logo Transportes Rey León" class="h-23 w-[270px]">
+            </a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#inicio" data-section="inicio" class="nav-link font-medium">Inicio</a>
+                <a href="#servicios" data-section="servicios" class="nav-link font-medium">Servicios</a>
+                <a href="#nosotros" data-section="nosotros" class="nav-link font-medium">Quiénes Somos</a>
+                <a href="#flota" data-section="flota" class="nav-link font-medium">Nuestra Flota</a>
+                <a href="#contacto"
+                    class="bg-rey-gold text-white px-5 py-2 rounded-full font-bold hover:bg-yellow-600 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5">Contacto</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-rey-dark focus:outline-none">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sección Principal (Hero Slider) -->
+    <section id="inicio" class="relative h-[calc(70vh-80px)] md:h-[calc(90vh-80px)] w-full overflow-hidden text-white">
+        <!-- Contenedor de Slides -->
+        <div id="slider-container" class="relative h-full">
+            <!-- Slide 1 -->
+            <div
+                class="slider-item absolute inset-0 w-full h-full transition-opacity duration-1000 ease-in-out opacity-0">
+                <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('IMG/Slider\ 1.png');">
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-r from-rey-blue via-rey-blue/70 to-transparent"></div>
+                <div
+                    class="relative z-10 container mx-auto px-6 h-full flex flex-col justify-center text-center md:text-left slide-content">
+                    <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 drop-shadow-lg">Movemos Vidas con
+                        Calidad y Seguridad</h1>
+                    <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto md:mx-0 text-gray-200">Tu aliado estratégico en
+                        transporte especial a nivel nacional.</p>
+                    <a href="#contacto"
+                        class="bg-rey-gold text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-yellow-600 shadow-xl w-fit mx-auto md:mx-0">Cotiza
+                        Ahora</a>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div
+                class="slider-item absolute inset-0 w-full h-full transition-opacity duration-1000 ease-in-out opacity-0">
+                <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('IMG/Slider\ 2.png');">
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-r from-rey-blue via-rey-blue/70 to-transparent"></div>
+                <div
+                    class="relative z-10 container mx-auto px-6 h-full flex flex-col justify-center text-center md:text-left slide-content">
+                    <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 drop-shadow-lg">La Seguridad es
+                        Nuestra Prioridad</h1>
+                    <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto md:mx-0 text-gray-200">Servicio de transporte
+                        escolar y empresarial con los más altos estándares.</p>
+                    <a href="#contacto"
+                        class="bg-rey-gold text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-yellow-600 shadow-xl w-fit mx-auto md:mx-0">Saber
+                        Más</a>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div
+                class="slider-item absolute inset-0 w-full h-full transition-opacity duration-1000 ease-in-out opacity-0">
+                <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('IMG/Slider 3.png');">
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-r from-rey-blue via-rey-blue/70 to-transparent"></div>
+                <div
+                    class="relative z-10 container mx-auto px-6 h-full flex flex-col justify-center text-center md:text-left slide-content">
+                    <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 drop-shadow-lg">Comodidad en Cada
+                        Kilómetro</h1>
+                    <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto md:mx-0 text-gray-200">Disfruta de tus viajes
+                        turísticos y traslados con el máximo confort.</p>
+                    <a href="#contacto"
+                        class="bg-rey-gold text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-yellow-600 shadow-xl w-fit mx-auto md:mx-0">Explorar
+                        Destinos</a>
+                </div>
+            </div>
+            <!-- Slide 4 -->
+            <div
+                class="slider-item absolute inset-0 w-full h-full transition-opacity duration-1000 ease-in-out opacity-0">
+                <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('IMG/Slider 4.png');">
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-r from-rey-blue via-rey-blue/70 to-transparent"></div>
+                <div
+                    class="relative z-10 container mx-auto px-6 h-full flex flex-col justify-center text-center md:text-left slide-content">
+                    <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 drop-shadow-lg">Confianza y
+                        Empatía en Salud</h1>
+                    <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto md:mx-0 text-gray-200">Transporte especializado
+                        para el sector salud con la sensibilidad que se requiere.</p>
+                    <a href="#contacto"
+                        class="bg-rey-gold text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-yellow-600 shadow-xl w-fit mx-auto md:mx-0">Contactar</a>
+                </div>
+            </div>
+            <!-- Slide 5 -->
+            <div
+                class="slider-item absolute inset-0 w-full h-full transition-opacity duration-1000 ease-in-out opacity-0">
+                <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('IMG/Slider 4.png');">
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-r from-rey-blue via-rey-blue/70 to-transparent"></div>
+                <div
+                    class="relative z-10 container mx-auto px-6 h-full flex flex-col justify-center text-center md:text-left slide-content">
+                    <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 drop-shadow-lg">Confianza y
+                        Empatía en Salud</h1>
+                    <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto md:mx-0 text-gray-200">Transporte especializado
+                        para el sector salud con la sensibilidad que se requiere.</p>
+                    <a href="#contacto"
+                        class="bg-rey-gold text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-yellow-600 shadow-xl w-fit mx-auto md:mx-0">Contactar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Servicios -->
+    <section id="servicios" class="py-20 bg-white section-fade-in">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-2 text-rey-blue">Soluciones de Movilidad para cada Necesidad
+            </h2>
+            <p class="text-gray-600 mb-16 text-lg">Ofrecemos un servicio de transporte especializado, seguro y puntual.
+            </p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Tarjeta de Servicio 1 -->
+                <div
+                    class="bg-rey-light p-8 rounded-xl shadow-lg transform hover:-translate-y-2 transition-transform duration-300 group">
+                    <div
+                        class="bg-rey-gold text-white w-16 h-16 rounded-full mx-auto flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-rey-dark">Transporte Empresarial</h3>
+                    <p class="text-gray-600">Traslado de personal y ejecutivos con la puntualidad y comodidad que tu
+                        empresa necesita.</p>
+                </div>
+                <!-- Tarjeta de Servicio 2 -->
+                <div
+                    class="bg-rey-light p-8 rounded-xl shadow-lg transform hover:-translate-y-2 transition-transform duration-300 group">
+                    <div
+                        class="bg-rey-gold text-white w-16 h-16 rounded-full mx-auto flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                            <path
+                                d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-5.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-5.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222 4 2.222V20M1 12v7a2 2 0 002 2h18a2 2 0 002-2v-7" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-rey-dark">Transporte Escolar</h3>
+                    <p class="text-gray-600">Rutas escolares seguras y confiables para la tranquilidad de padres y
+                        directivos.</p>
+                </div>
+                <!-- Tarjeta de Servicio 3 -->
+                <div
+                    class="bg-rey-light p-8 rounded-xl shadow-lg transform hover:-translate-y-2 transition-transform duration-300 group">
+                    <div
+                        class="bg-rey-gold text-white w-16 h-16 rounded-full mx-auto flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-rey-dark">Transporte Sector Salud</h3>
+                    <p class="text-gray-600">Movilización de pacientes con la sensibilidad, empatía y el cuidado que
+                        merecen.</p>
+                </div>
+                <!-- Tarjeta de Servicio 4 -->
+                <div
+                    class="bg-rey-light p-8 rounded-xl shadow-lg transform hover:-translate-y-2 transition-transform duration-300 group">
+                    <div
+                        class="bg-rey-gold text-white w-16 h-16 rounded-full mx-auto flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2h10a2 2 0 002-2v-1a2 2 0 012-2h1.945M7.707 4.293l1.414 1.414a1 1 0 01-1.414 1.414l-1.414-1.414a1 1 0 011.414-1.414zM16.293 4.293l1.414 1.414a1 1 0 01-1.414 1.414l-1.414-1.414a1 1 0 011.414-1.414zM12 18a3 3 0 100-6 3 3 0 000 6z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-rey-dark">Transporte Turístico</h3>
+                    <p class="text-gray-600">Recorridos y viajes a nivel nacional con vehículos cómodos y conductores
+                        expertos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Carrusel de Clientes -->
+    <section id="clientes" class="py-16 bg-rey-light">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="text-2xl font-bold text-rey-dark mb-4">Nuestros Clientes Confían en Nosotros</h3>
+            <div class="relative mt-10 client-carousel-container">
+                <div class="client-carousel-track flex items-center">
+                    <!-- Aquí reemplazas las imágenes. Repite los logos si tienes menos de 8 para un mejor efecto. -->
+                    <div class="client-logo mx-8">
+                        <img src="IMG/logo_asmet.png" alt="Asmet Salud">
+                    </div>
+                    <div class="client-logo mx-8">
+                        <img src="IMG/fondo-medisfarma.png" alt="Medisfarma">
+                    </div>
+                    <div class="client-logo mx-8">
+                        <img src="IMG/Munditur.png" alt="Munditur">
+                    </div>
+                    <div class="client-logo mx-8">
+                        <img src="IMG\Agrodex.png" alt="Agrodex">
+                    </div>
+                    <div class="client-logo mx-8">
+                        <img src="IMG\Totall S.A.S.avif" alt="Totall S.A.S">
+                    </div>
+                    <div class="client-logo mx-8">
+                        <img src="IMG\New Brands.png" alt="Logo Cliente 6">
+                    </div>
+                    <div class="client-logo mx-8">
+                        <img src="IMG\Noga S.A.S" alt="Logo Cliente 7">
+                    </div>
+                    <div class="client-logo mx-8">
+                        <img src="IMG\Misionero Verbo Divino.png" alt="Logo Cliente 8">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Quiénes Somos -->
+    <section id="nosotros" class="py-20 bg-rey-light section-fade-in">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-rey-blue">Comprometidos con tu Movilidad</h2>
+                <p class="text-gray-600 text-lg max-w-3xl mx-auto">Conoce la historia, la misión y los valores que nos
+                    impulsan a ser líderes en el transporte especial de pasajeros.</p>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center gap-12 md:gap-16 mb-20">
+                <div class="md:w-1/2">
+                    <img src="IMG\Imagen Talento Humano.jpg" alt="Equipo de Transportes Rey León"
+                        class="rounded-xl shadow-xl w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl md:text-3xl font-bold mb-4 text-rey-dark">Nuestra Historia</h3>
+                    <p class="text-gray-700 mb-6 text-lg leading-relaxed text-justify">
+                        Fundada en abril de 2019, TRANSPORTES REY LEON S.A.S. (NIT: 901.277.448-3) nació con
+                        el propósito de transformar el servicio de transporte terrestre especial. Desde nuestros
+                        inicios, nos hemos dedicado a ofrecer una operación habilitada por el Ministerio de Transporte a
+                        nivel nacional, fundamentada en la empatía, la seguridad y la responsabilidad.
+                    </p>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-10 mb-20">
+                <div class="bg-white p-8 rounded-lg border-l-4 border-rey-gold shadow-lg">
+                    <h4 class="font-bold text-rey-dark text-2xl mb-3">Misión</h4>
+                    <p class="text-gray-600 leading-relaxed text-justify">En TRANSPORTES REY LEÓN S.A.S. proveemos
+                        servicios de Transporte terrestre automotor especial de pasajeros en la modalidad escolar,
+                        empresarial, turístico, salud y particular, operando con habilitación del Ministerio de
+                        Transporte a nivel nacional, ofreciendo un servicio excepcional, fundamentado en la máxima
+                        seguridad, puntualidad y empatía de todo nuestro equipo de trabajo, para garantizar la comodidad
+                        y el bienestar en cada trayecto.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg border-l-4 border-rey-gold shadow-lg">
+                    <h4 class="font-bold text-rey-dark text-2xl mb-3">Visión</h4>
+                    <p class="text-gray-600 leading-relaxed text-justify">Para el año 2030, TRANSPORTES REY LEÓN S.A.S.
+                        se consolidará como una organización líder siendo el referente nacional por nuestra capacidad de
+                        adaptarnos con excelencia a las necesidades operativas y la innovación tecnológica. Nuestro
+                        compromiso inquebrantable con la sostenibilidad y la satisfacción total del cliente nos
+                        posicionará como el socio estratégico preferido, brindando un servicio que va más allá del
+                        transporte enfocado en la tranquilidad, seguridad y un trato humano indispensable para cada
+                        viaje.</p>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <h3 class="text-2xl md:text-3xl font-bold mb-10 text-rey-dark">Principios Corporativos</h3>
+                <div class="grid sm:grid-cols-1 md:grid-cols-3 gap-10">
+                    <!-- Principio 1 -->
+                    <div class="text-center">
+                        <div
+                            class="bg-rey-gold text-white w-20 h-20 rounded-full mx-auto flex items-center justify-center mb-5 shadow-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M15 21a6 6 0 00-9-5.197M15 21a6 6 0 00-9-5.197" />
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2 text-rey-dark">Trato Humano</h4>
+                        <p class="text-gray-600">Servicio cercano, amable y respetuoso, priorizando el bienestar y
+                            satisfacción de nuestros clientes.</p>
+                    </div>
+                    <!-- Principio 2 -->
+                    <div class="text-center">
+                        <div
+                            class="bg-rey-gold text-white w-20 h-20 rounded-full mx-auto flex items-center justify-center mb-5 shadow-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2 text-rey-dark">Compromiso</h4>
+                        <p class="text-gray-600">Responsabilidad y dedicación en cada servicio, garantizando puntualidad
+                            y seguridad.</p>
+                    </div>
+                    <!-- Principio 3 -->
+                    <div class="text-center">
+                        <div
+                            class="bg-rey-gold text-white w-20 h-20 rounded-full mx-auto flex items-center justify-center mb-5 shadow-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2 text-rey-dark">Adaptabilidad e Innovación</h4>
+                        <p class="text-gray-600">Nuestros procesos tecnológicos son escalables a las necesidades
+                            operativas y contractuales.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Flota -->
+    <section id="flota" class="py-20 bg-white section-fade-in">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-2 text-rey-blue">Nuestra Moderna Flota Vehicular</h2>
+            <p class="text-gray-600 mb-16 text-lg">Vehículos seguros y confortables para tu completa tranquilidad.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Vehículo 1 -->
+                <div
+                    class="bg-rey-light rounded-xl shadow-lg overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="IMG\Automóvil Tip Sedan.jpg" alt="Automóvil Sedán"
+                        class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-6">
+                        <p class="font-bold text-lg text-rey-dark">Automóvil Sedán</p>
+                    </div>
+                </div>
+                <!-- Vehículo 2 -->
+                <div
+                    class="bg-rey-light rounded-xl shadow-lg overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="IMG\Camioneta Station Wagon (Cerrada).png." alt="Camioneta S.W."
+                        class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-6">
+                        <p class="font-bold text-lg text-rey-dark">Camioneta S.W.</p>
+                    </div>
+                </div>
+                <!-- Vehículo 3 -->
+                <div
+                    class="bg-rey-light rounded-xl shadow-lg overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="IMG\Campero - Camioneta doble cabina (4w).png" alt="Campero 4WD"
+                        class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-6">
+                        <p class="font-bold text-lg text-rey-dark">Campero 4WD</p>
+                    </div>
+                </div>
+                <!-- Vehículo 4 -->
+                <div
+                    class="bg-rey-light rounded-xl shadow-lg overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="IMG\Campero - Camioneta doble cabina 4x4.png" alt="Doble Cabina 4x4"
+                        class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-6">
+                        <p class="font-bold text-lg text-rey-dark">Doble Cabina 4x4</p>
+                    </div>
+                </div>
+                <!-- Vehículo 5 -->
+                <div
+                    class="bg-rey-light rounded-xl shadow-lg overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="IMG\Microbus.png" alt="Microbús"
+                        class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-6">
+                        <p class="font-bold text-lg text-rey-dark">Microbús</p>
+                    </div>
+                </div>
+                <!-- Vehículo 6 -->
+                <div
+                    class="bg-rey-light rounded-xl shadow-lg overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="IMG\Buseta.png" alt="Buseta"
+                        class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-6">
+                        <p class="font-bold text-lg text-rey-dark">Buseta</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Por qué Elegirnos -->
+    <section id="elegirnos" class="py-20 bg-rey-light section-fade-in">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-rey-blue">Nuestra Ventaja Competitiva</h2>
+            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg flex items-start space-x-4">
+                    <div class="flex-shrink-0 text-rey-gold"><svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                        </svg></div>
+                    <div>
+                        <h4 class="font-bold text-lg mb-2 text-rey-dark">Servicio Puerta a Puerta</h4>
+                        <p class="text-gray-600">Te recogemos y te llevamos hasta la puerta de tu destino para tu máxima
+                            comodidad.</p>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg flex items-start space-x-4">
+                    <div class="flex-shrink-0 text-rey-gold"><svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg></div>
+                    <div>
+                        <h4 class="font-bold text-lg mb-2 text-rey-dark">Protocolo de Bienestar</h4>
+                        <p class="text-gray-600">Garantizamos un recorrido cómodo y seguro con una conducción
+                            profesional y a velocidad moderada.</p>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg flex items-start space-x-4">
+                    <div class="flex-shrink-0 text-rey-gold"><svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg></div>
+                    <div>
+                        <h4 class="font-bold text-lg mb-2 text-rey-dark">Tecnología y Soporte</h4>
+                        <p class="text-gray-600">Centro de control para diseñar rutas y apoyar de manera inmediata
+                            cualquier evento inesperado.</p>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg flex items-start space-x-4">
+                    <div class="flex-shrink-0 text-rey-gold"><svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg></div>
+                    <div>
+                        <h4 class="font-bold text-lg mb-2 text-rey-dark">Facturación Especializada</h4>
+                        <p class="text-gray-600">Nuestro proceso facilita la auditoría y recobro por parte de las
+                            entidades contratantes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="py-20 bg-rey-dark text-white section-fade-in">
+        <div class="container mx-auto px-6">
+            <div class="text-center">
+                <h2 class="text-3xl md:text-4xl font-bold">¿Listo para tu próximo viaje?</h2>
+                <p class="text-gray-300 mt-2 mb-8 text-lg">¡Contáctanos! Estamos listos para atenderte.</p>
+            </div>
+            <div class="flex flex-col md:flex-row gap-12 items-center">
+                <!-- Información de Contacto -->
+                <div class="md:w-1/2 space-y-6">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 text-rey-gold pt-1"><svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg></div>
+                        <div>
+                            <h4 class="text-rey-gold font-bold text-lg">Dirección</h4>
+                            <p class="text-gray-300">CL 33 9 A 25 LC 3 ED TERRAZAS DE ANDALUCIA, Ibagué - Tolima</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 text-rey-gold pt-1"><svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                            </svg></div>
+                        <div>
+                            <h4 class="text-rey-gold font-bold text-lg">Teléfonos</h4>
+                            <p class="text-gray-300">+57 315 0693337</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 text-rey-gold pt-1"><svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg></div>
+                        <div>
+                            <h4 class="text-rey-gold font-bold text-lg">Correo Electrónico</h4>
+                            <p class="text-gray-300">gerencia@transreyleon.com</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Formulario -->
+                <div class="md:w-1/2 w-full">
+                    <form id="contact-form" class="bg-white text-rey-dark p-8 rounded-lg shadow-2xl">
+                        <div class="mb-5">
+                            <label for="name" class="block text-sm font-bold mb-2">Nombre Completo</label>
+                            <input type="text" id="name" name="name"
+                                class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-rey-gold"
+                                required>
+                        </div>
+                        <div class="mb-5">
+                            <label for="email" class="block text-sm font-bold mb-2">Email</label>
+                            <input type="email" id="email" name="email"
+                                class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-rey-gold"
+                                required>
+                        </div>
+                        <div class="mb-5">
+                            <label for="message" class="block text-sm font-bold mb-2">Mensaje</label>
+                            <textarea id="message" name="message" rows="4"
+                                class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-rey-gold"
+                                required></textarea>
+                        </div>
+                        <button id="submit-button" type="submit"
+                            class="w-full bg-rey-gold text-white font-bold py-3 px-4 rounded-lg hover:bg-yellow-600 transition duration-300 shadow-lg hover:shadow-xl">Enviar
+                            Mensaje</button>
+                        <!-- Mensaje de estado del envío -->
+                        <div id="status-message" class="mt-4 text-center font-medium"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-rey-blue text-white">
+        <div class="container mx-auto px-6 py-10">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+                <div>
+                    <h3 class="text-xl font-bold mb-4"><span class="text-rey-gold">TRANSPORTES REY LEÓN S.A.S</span>
+                    </h3>
+                    <p class="text-gray-400">Movemos Vidas con Calidad y Seguridad.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-lg">Navegación</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#inicio" class="text-gray-400 hover:text-rey-gold transition">Inicio</a></li>
+                        <li><a href="#servicios" class="text-gray-400 hover:text-rey-gold transition">Servicios</a></li>
+                        <li><a href="#nosotros" class="text-gray-400 hover:text-rey-gold transition">Quiénes Somos</a>
+                        </li>
+                        <li><a href="#flota" class="text-gray-400 hover:text-rey-gold transition">Nuestra Flota</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-lg">Contacto</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Ibagué - Tolima</li>
+                        <li>+57 315 0693337</li>
+                        <li>gerencia@transreyleon.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-500 text-sm">
+                <p>&copy; 2025 Transportes Rey León S.A.S. | Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Menú Móvil Mejorado -->
+    <div id="mobile-menu-overlay"
+        class="hidden fixed inset-0 bg-black bg-opacity-50 z-50 transition-opacity duration-300 ease-in-out md:hidden">
+    </div>
+    <div id="mobile-menu"
+        class="fixed top-0 right-0 h-full w-64 bg-rey-blue text-white transform translate-x-full transition-transform duration-300 ease-in-out z-50 md:hidden">
+        <div class="p-4 flex justify-end">
+            <button id="close-menu-btn" class="text-white focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                    </path>
+                </svg>
+            </button>
+        </div>
+        <div class="flex flex-col items-center mt-8 space-y-6">
+            <a href="#inicio" class="text-xl hover:text-rey-gold transition duration-300 menu-link">Inicio</a>
+            <a href="#servicios" class="text-xl hover:text-rey-gold transition duration-300 menu-link">Servicios</a>
+            <a href="#nosotros" class="text-xl hover:text-rey-gold transition duration-300 menu-link">Quiénes Somos</a>
+            <a href="#flota" class="text-xl hover:text-rey-gold transition duration-300 menu-link">Nuestra Flota</a>
+            <a href="#contacto" class="text-xl hover:text-rey-gold transition duration-300 menu-link">Contacto</a>
+        </div>
+    </div>
+
+    <!-- Configuración de Tailwind (dentro de un script para que funcione localmente) -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'rey-gold': '#d69e2e',
+                        'rey-blue': '#1a365d',
+                        'rey-dark': '#2d3748',
+                        'rey-light': '#f7fafc',
+                        'rey-gray': '#e2e8f0',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Vínculo al archivo JavaScript externo -->
+    <script src="Script.js"></script>
+</body>
+
+</html>
